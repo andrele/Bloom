@@ -12,8 +12,12 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bloomstyle.css">
+        <link rel="stylesheet" href="css/animate.min.css">
 
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/bloomscripts.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -22,17 +26,21 @@
 
         <div class="header-container">
 
-                <img src="/home/prachi/Desktop/Desktop/workspace/Bloom/bloomlogo.png">
+                <img src="img/bloomlogo.png">
         </div>
 
         <div class="main-container">
-            <center>
 
-            <header class = "head"><font face="Candara"><p style="font-size:32px">What's your goal?</p></font></header>
-            <p style="font-size:20px">
-            <input id="goal" type="text" placeholder="I want to...">
-            <button name="Start" style="background-color:#f68d20" ><a href="./step2.html" style="text-decoration: none">Start</a></button></p>
-            </center>
+            <div id="goal-statement-container">
+                <h2>What story do you want to tell?</h2>
+                <input id="goal" type="text" placeholder="I want to...">
+                <button name="Start" onclick="goalStatementComplete()"></button>
+            </div>
+
+            <div>
+                Test
+            </div>
+
         </div> <!-- #main-container -->
       
     </body>

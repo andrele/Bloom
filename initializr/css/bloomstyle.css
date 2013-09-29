@@ -1,0 +1,10 @@
+﻿body {
+}
+
+#goal-statement-container{
+    width:500px;
+    margin: 0 auto;
+}
+#goal-statement-container h2{
+    font-size: 32px;
+}
