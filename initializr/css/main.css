@@ -160,6 +160,14 @@ nav a:hover {
     padding-top: 20px;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
 .typeahead,
 .tt-query,
 .tt-hint {
@@ -224,16 +232,29 @@ nav a:hover {
   margin: 0;
 }
 
+#goal-statement-container{
+    width:500px;
+    margin: 0 auto;
+}
+#goal-statement-container h2{
+    font-size: 32px;
+}
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+.ultra.main {
+    width: 100%;
+}
+.main-container{
+    float: left;
+    width: 600px;
+}
 
-
-
-
-
-
+#content{
+    float: left;
+}
 
 
 

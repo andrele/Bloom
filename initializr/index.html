@@ -2,7 +2,8 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -12,7 +13,7 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
-
+        <link rel="stylesheet" href="css/animate.min.css">
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
@@ -21,26 +22,70 @@
         <![endif]-->
 
         <div class="header-container">
-            <img src="/home/prachi/Desktop/Desktop/workspace/Bloom/bloomlogo.png">
+            <img src="img/bloomlogo.png">
         </div>
 
+    <div class="ultra main">
         <div class="main-container">
-            <center>
+            <div class="step1 advance hidden style=top: 0px; left: 0px" onclick="transitiontoPage2()">
+                <a> <img src="img/Bloom1.png"> </a>
+                    
+            </div>
+            <div class="step2 hidden style=top: 0px; left: 0px"  onclick="transitiontoPage3()">
+                    <a> <img src="img/Bloom1a.png"> </a>
+            </div>
 
-            <header class = "head"><font face="Candara"><p style="font-size:32px">What's your goal?</p></font></header>
-            <p style="font-size:20px">
-            <input id="goal" type="text" placeholder="I want to...">
-            <button id="Start" style="background-color:#f68d20" ><a>Start</a></button></p>
+             <div class="step3 hidden advance style=top: 0px; left: 0px"  onclick="transitiontoPage4()">
+                    <a> <img src="img/Bloom1c.png"> </a>
+            </div>
+
+             <div class="step4 hidden style=top: 0px; left: 0px"  onclick="transitiontoPage5()">
+                    <a> <img src="img/Bloom1d.png"> </a>
+            </div>
+
+             <div class="step5 hidden style=top: 0px; left: 0px"  onclick="transitiontoPage6()">
+                    <a> <img src="img/Bloom1e.png"> </a>
+            </div>
+
+             <div class="step6 hidden style=top: 0px; left: 0px">
+                    <a> <img src="img/Bloom 1f.png"> </a>
+            </div>
+
+            <center>
+                <div class="goal-statement-container advance">
+                    <header class = "head">
+                        <font face="Candara">
+                            <p style="font-size:32px">What story do you want to tell?</p>
+                        </font>
+                    </header>
+                    <p style="font-size:20px">
+                    <input id="goal" type="text" placeholder="I want to...">
+                    <button id="Start" style="background-color:#f68d20"><a>Start</a></button></p>
+                </div>
+
             </center>
         </div> <!-- #main-container -->
 
-        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-        <!-- <script src="js/jquery.js"></script> -->
+        <div id="content" style="width: 600px; height: 600px; left: 0px;">
+                   </div>
+            <script src="js/jquery.js"></script>
+            <script> $.fn.raphael = function()
+            {
+               var canvas = new Raphael(document.getElementById('content'), 600, 600);
+                return canvas;
+            };
+            </script>
+
+    </div>
+
+        
+        <script src="js/jquery-ui.js"></script>
         <script src="js/Underscore.js"></script>
         <script src="js/Backbone.js"></script>
         <script src="js/localStorage.js"></script>
         <script src="js/typeahead.js"></script>
+        <script src="js/raphael.js"></script>
+        <!-- <script src="js/script_002.js"> </script> -->
         <script src="js/main.js"></script>
 
     </body>
